@@ -14,6 +14,7 @@ export const defaultNavigation: FuseNavigationItem[] = [
                 title: 'Anillos',
                 icon : 'heroicons_outline:chevron-right',
                 type : 'basic',
+                link    : '/inventory',
                 badge: {
                     title  : 'New!',
                     classes: 'text-teal-500',
@@ -143,12 +144,20 @@ export const compactNavigation: FuseNavigationItem[] = [
         link    : '/profile'
     },
     {
-        id      : 'navigation-features',
+        id      : 'inventory',
         title   : 'Catalogo',
-        tooltip : 'Catalogo de productos',
-        type    : 'aside',
-        icon    : 'heroicons_outline:bars-3',
-        children: [], // This will be filled from defaultNavigation so we don't have to manage multiple sets of the same navigation
+        tooltip : 'Busca productos',
+        type    : 'basic',
+        icon    : 'heroicons_outline:book-open',
+        link    : '/inventory'
+    },
+    {
+        id      : 'entrepreneur',
+        title   : 'Emprendedores',
+        tooltip : 'Visualiza tus emprendedores!',
+        type    : 'basic',
+        icon    : 'heroicons_outline:users',
+        link    : '/entrepeneurs'
     },
     {
         id      : 'pedidos-features',
